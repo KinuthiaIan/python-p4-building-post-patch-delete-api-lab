@@ -41,7 +41,7 @@ class TestApp:
         with app.app_context():
 
             mb = Bakery.query.filter_by(id=1).first()
-            mb.name = "ABC Bakery"
+            mb.name = "My Bakery"
             db.session.add(mb)
             db.session.commit()
 
